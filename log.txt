@@ -1,0 +1,6 @@
+861567f Update member1.html oleh Member 1
+9c27e53 Memperbarui index.html dengan welcome message
+05ec8b5 Menambahkan member1.html
+272cc4f Menambahkan leader.html
+6d9f0e7 Menambahkan member1.html
+9cd2140 Initial commit with index.html
