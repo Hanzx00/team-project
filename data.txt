@@ -1,0 +1,2 @@
+This is a test file to count vowels like a, e, i, o, and u.
+Let's run a GitHub Actions workflow on this data.
