@@ -2,7 +2,6 @@
 
 echo "Analyzing vowels in data.txt..."
 
-echo "$(
 awk '
 {
   for (i=1; i<=length($0); i++) {
@@ -17,4 +16,3 @@ END {
     printf "%s: %d\n", v, count[v]
   }
 }' data.txt
-)"
