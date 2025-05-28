@@ -1,0 +1,28 @@
+name: Vowel Count Matrix Test
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  run-matrix:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run vowel analysis on Linux and Mac
+        if: runner.os != 'Windows'
+        run: |
+          chmod +x .github/scripts/analyze-vowels.sh
+          .github/scripts/analyze-vowels.sh
+
+      - name: Run vowel analysis on Windows
+        if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          .github/scripts/analyze-vowels.sh
