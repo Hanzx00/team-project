@@ -1,5 +1,4 @@
-HEAD
-isi dari branch main
-isi dari implement-entrypoint
-implement-entrypoint
-### Updated by Hanzx00 on 2025-05-28 15:26:43
+main
+content from the `main` branch
+content from the `fix-issue-link` branch
+fix-issue-link
