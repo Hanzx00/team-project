@@ -1,0 +1,16 @@
+name: Vowel Analyzer
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run vowel analysis script
+        run: bash .github/scripts/analyze-vowels.sh
